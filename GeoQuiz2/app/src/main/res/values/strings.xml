@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GeoQuiz</string>
+    <string name="action_settings">Settings</string>
+    <string name="question_text">Question Text</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
+    <string name="next_button">Next</string>
+    <string name="previous_button">Previous</string>
+    <string name="question1">Brasilia is the capital city of Brazil</string>
+    <string name="question2">Vanuatu has a greater area than Nauru</string>
+    <string name="question3">Osh is the capital city of Kyrgyzstan</string>
+    <string name="question4">Iowa has a greater area than Greece</string>
+    <string name="question5">China borders the same number of countries as Russia</string>
+    <string name="question6">Memphis is the state capital of Tennessee</string>
+    <string name="question7">The Sahara Desert has a greater area than the USA</string>
+    <string name="question8">The worlds tallest waterfall is in Venezuela</string>
+    <string name="question9">Madrid is more easterly than London</string>
+    <string name="question10">Greenland is on the Eurasian tectonic plate</string>
+</resources>

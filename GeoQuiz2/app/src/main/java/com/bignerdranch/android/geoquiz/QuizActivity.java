@@ -1,5 +1,6 @@
 package com.bignerdranch.android.geoquiz;
 
+import android.os.Build;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -24,8 +25,10 @@ public class QuizActivity extends AppCompatActivity {
     private ImageButton mNextButton;
     private ImageButton mPreviousButton;
     private TextView mQuestionTextView;
+    private TextView mAndroidVersion;
     private int mCurrentIndex = 0;
     private static final int REQUEST_CHEAT_CODE = 0;
+    private String version_name;
 
     private Question[] mQuestionBank = new Question[]{
             new Question(R.string.question1, true),
@@ -70,6 +73,10 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
+        version_name = Build.VERSION.RELEASE;
+
+        mAndroidVersion = (TextView) findViewById(R.id.current_version_view);
+
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
         mQuestionTextView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +85,9 @@ public class QuizActivity extends AppCompatActivity {
                 updateQuestion();
             }
         });
+
+        mAndroidVersion = (TextView) findViewById(R.id.current_version_view);
+        mAndroidVersion.setText("API Level " + version_name);
 
         mTrueButton = (Button) findViewById(R.id.true_button);
         mTrueButton.setOnClickListener(new View.OnClickListener() {
